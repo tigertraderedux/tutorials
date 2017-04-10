@@ -2,6 +2,26 @@
 
 ## One-time setup
 
+* Create the parent folder:
+`mkdir -p $GOPATH/src/github.com/casey-chow`
+
+* Go to the parent folder:
+`cd $GOPATH/src/github.com/casey-chow`
+
+* Use one of the following methods to clone the repository:
+
+    - `git clone https://github.com/casey-chow/tigertrade.git`
+
+    - `git clone git@github.com:casey-chow/tigertrade.git`
+
+* Go into the repository:
+`cd tigertrade`
+
+* Get the `.env` file from the Google Drive and put it in the `tigertrade` folder.
+
+* Set up the environment:
+`make install`
+
 ## Starting work
 
 ### On your current branch
@@ -34,6 +54,9 @@
 
 * Get the contents of the brancH:
 `git pull`
+
+* If you want to run our code, you will need to get `yarn` and `govendor` up to date:
+`make install`
 
 ### On a new branch
 
